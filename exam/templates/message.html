@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Infinite Message</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </head>
+    <body style = "background-color: lightgrey; padding-top: 70px; ">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand" >Message delivery results<div>
+        </div>
+      </div>
+    </nav>
+
+     <div class="container">
+      <div class="starter-template">
+            <div text-align='center'>
+            	<p>Phone number entered : {{phn}}</p>
+            	<p>Status : {{msg}}</p>
+            </div>            
+        </div>
+        <a href="{{ url_for('index') }}"><span class="glyphicons glyphicons-home"></span>BACK</a>
+      </div>
+    </div>
+   </body>
+    
+</html>
